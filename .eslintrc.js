@@ -13,6 +13,7 @@ module.exports = {
         commonjs: true,
     },
     extends: [
+        'next',
         'eslint:recommended',
         'plugin:react/recommended',
         'plugin:prettier/recommended',
@@ -30,6 +31,7 @@ module.exports = {
     plugins: ['react', '@next/eslint-plugin-next', 'prettier'],
     rules: {
         'import/prefer-default-export': 0,
+        "@next/next/no-page-custom-font": "off",
         'no-console': 'warn',
         'no-nested-ternary': 0,
         'no-underscore-dangle': 0,
@@ -42,7 +44,7 @@ module.exports = {
         'react/jsx-no-comment-textnodes': 0,
         'react/jsx-props-no-spreading': 0,
         'react/no-array-index-key': 0,
-        'react/no-unescaped-entities': 0,
+        'react/no-unescaped-entities': "off",
         'react/require-default-props': 0,
         'react/react-in-jsx-scope': 0,
         'linebreak-style': ['error', 'unix'],
@@ -53,4 +55,5 @@ module.exports = {
             { usePrettierrc: true },
         ],
     },
+
 }
